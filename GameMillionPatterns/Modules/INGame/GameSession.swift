@@ -18,7 +18,7 @@ final class GameSession {
     
     var questins = [Question]()
     
-    init(questionsList: [Question]) {
-        self.questins = questionsList
+    init(questions: [Question]) {
+        self.questins = questions
     }
 }
