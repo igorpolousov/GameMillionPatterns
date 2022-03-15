@@ -33,6 +33,8 @@
 		C2942A6627E09267009615D5 /* ResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A6527E09267009615D5 /* ResultsCell.swift */; };
 		C2942A6A27E092CC009615D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A6927E092CC009615D5 /* SettingsView.swift */; };
 		C2942A6C27E092F2009615D5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A6B27E092F2009615D5 /* SettingsViewController.swift */; };
+		C2942A6E27E0936B009615D5 /* Observe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A6D27E0936B009615D5 /* Observe.swift */; };
+		C2942A7027E0938A009615D5 /* QuestionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A6F27E0938A009615D5 /* QuestionBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		C2942A6527E09267009615D5 /* ResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCell.swift; sourceTree = "<group>"; };
 		C2942A6927E092CC009615D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C2942A6B27E092F2009615D5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C2942A6D27E0936B009615D5 /* Observe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observe.swift; sourceTree = "<group>"; };
+		C2942A6F27E0938A009615D5 /* QuestionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 		C27B5BF827E075FF00E2CF3B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C2942A6D27E0936B009615D5 /* Observe.swift */,
+				C2942A6F27E0938A009615D5 /* QuestionBuilder.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -364,7 +370,9 @@
 				C2942A4927E08E6B009615D5 /* AddQuestionCellView.swift in Sources */,
 				C2942A5F27E09103009615D5 /* GameSession.swift in Sources */,
 				C2942A5B27E0908B009615D5 /* Game.swift in Sources */,
+				C2942A6E27E0936B009615D5 /* Observe.swift in Sources */,
 				C2942A6A27E092CC009615D5 /* SettingsView.swift in Sources */,
+				C2942A7027E0938A009615D5 /* QuestionBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
