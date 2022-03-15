@@ -7,39 +7,36 @@
 
 import Foundation
 
-// Структура вопроса
 struct Question {
     let question: String
-    let answers: [String]
-    let correctAnswer: Int
+    let answerOptions: [String]
+    let rightAnswer: Int
     
-    // Функция проверки вопроса
     func checkAnswer(userAnswer: Int) -> Bool {
-        return userAnswer == correctAnswer
+        return userAnswer == rightAnswer
     }
     
-    // Функция 50/50
     func fiftyFifty() -> Question {
         var newAnswers = ["", "", "", ""]
-        var oldAnswers = answers
-        newAnswers[correctAnswer] = answers[correctAnswer]
-        oldAnswers.remove(at: correctAnswer)
+        var oldAnswers = answerOptions
+        newAnswers[rightAnswer] = answerOptions[rightAnswer]
+        oldAnswers.remove(at: rightAnswer)
         let randomAnswer = oldAnswers[Int.random(in: 0..<oldAnswers.count)]
         
-        for (i, _) in answers.enumerated() {
-            if randomAnswer == answers[i] {
+        for (i, _) in answerOptions.enumerated() {
+            if randomAnswer == answerOptions[i] {
                 newAnswers[i] = randomAnswer
             }
         }
-        return Question(question: question, answers: newAnswers, correctAnswer: correctAnswer)
+        return Question(question: question, answerOptions: newAnswers, rightAnswer: rightAnswer)
     }
 }
 
 // Массив с вопросами
-var questions: [Question] = [
-Question(question: "Что лучше всего притягивает магнит?", answers: ["Железо", "Пластмассу", "Дерево", "Плохого человека"], correctAnswer: 0),
-Question(question: "Страна происхождения Scotch Whisky", answers: ["Россия", "Ирладндия", "США", "Шотландия"], correctAnswer: 3),
-Question(question: "Традиционный способ обращения к судье в судах США", answers: ["Ваше святейшество", "Ваша честь", "Вашество", "Yo dude!"], correctAnswer: 1),
-Question(question: "В каком из этих фильмов Вупи Голдберг переодевается монахиней?", answers: ["Сестричка, действуй", "Привидение", "Цветы лиловые полей", "Рыцарь Камелота"], correctAnswer: 0),
-Question(question: "Человек, который не является банкиром и ссужает деньги под чрезвычайно высокие проценты, известен как?", answers: ["Бумажный тигр", "Зеленая змея", "Ростовщик", "Шурин"], correctAnswer: 2)
+var questionsList: [Question] = [
+Question(question: "Что лучше всего притягивает магнит?", answerOptions: ["Железо", "Пластмассу", "Дерево", "Плохого человека"], rightAnswer: 0),
+Question(question: "Страна происхождения Scotch Whisky", answerOptions: ["Россия", "Ирладндия", "США", "Шотландия"], rightAnswer: 3),
+Question(question: "Традиционный способ обращения к судье в судах США", answerOptions: ["Ваше святейшество", "Ваша честь", "Вашество", "Yo dude!"], rightAnswer: 1),
+Question(question: "В каком из этих фильмов Вупи Голдберг переодевается монахиней?", answerOptions: ["Сестричка, действуй", "Привидение", "Цветы лиловые полей", "Рыцарь Камелота"], rightAnswer: 0),
+Question(question: "Человек, который не является банкиром и ссужает деньги под чрезвычайно высокие проценты, известен как?", answerOptions: ["Бумажный тигр", "Зеленая змея", "Ростовщик", "Шурин"], rightAnswer: 2)
 ]

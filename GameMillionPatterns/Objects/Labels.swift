@@ -4,7 +4,6 @@
 //
 //  Created by Igor Polousov on 15.03.2022.
 //
-
 import UIKit
 
 class QuestionLabel: UILabel {
@@ -24,7 +23,7 @@ class QuestionLabel: UILabel {
         self.layer.cornerRadius = self.frame.height / 4
         self.clipsToBounds = true
         self.backgroundColor = UIColor.systemGray5
-        self.textColor = UIColor.lightYellow
+        self.textColor = UIColor.lightPurple
         self.font = UIFont(name: "Chalkduster", size: 16)
     }
     

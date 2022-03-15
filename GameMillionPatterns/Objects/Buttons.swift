@@ -26,7 +26,7 @@ final class MainButton: UIButton {
 
     private func setup() {
         self.layer.cornerRadius = self.layer.frame.height / 4
-        self.backgroundColor = UIColor.lightYellow
+        self.backgroundColor = UIColor.lightPurple
         self.setTitleColor(UIColor.white, for: .normal)
         self.setTitleColor(UIColor.darkGray, for: .selected)
         self.titleLabel?.font = UIFont(name: "Chalkduster", size: 20)
@@ -55,7 +55,7 @@ class AnswerButton: UIButton {
     
     private func commonInit() {
         self.layer.cornerRadius = self.layer.frame.height / 4
-        self.backgroundColor = UIColor.lightYellow
+        self.backgroundColor = UIColor.lightPurple
         self.setTitleColor(UIColor.white, for: .normal)
         self.titleLabel?.font = UIFont(name: "Chalkduster", size: 24)
     }
@@ -87,10 +87,10 @@ class AdditionalButton: UIButton {
     private func setup() {
         self.layer.cornerRadius = self.layer.frame.height / 4
         self.backgroundColor = UIColor.systemGray5
-        self.setTitleColor(UIColor.lightYellow, for: .normal)
+        self.setTitleColor(UIColor.lightPurple, for: .normal)
         self.setTitleColor(UIColor.darkGray, for: .selected)
         self.titleLabel?.font = UIFont(name: "Chalkduster", size: 20)
-        self.tintColor = UIColor.lightYellow
+        self.tintColor = UIColor.lightPurple
         
     }
 }

@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 // 1. Originator
 extension Game {
     
@@ -73,3 +74,4 @@ class GameCaretaker {
         case gameNotFound
     }
 }
+

@@ -13,13 +13,13 @@ protocol GameStrategy {
 
 class Regular: GameStrategy {
     func defineQuestions(questions: [Question]) -> [Question] {
-        return questions
+        return questionsList
     }
 }
 
 class Random: GameStrategy {
     func defineQuestions(questions: [Question]) -> [Question] {
-        return questions.shuffled()
+        return questionsList.shuffled()
     }
 }
 
@@ -28,3 +28,4 @@ extension GameStrategy {
         return String(describing: self)
     }
 }
+

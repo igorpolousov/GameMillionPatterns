@@ -16,7 +16,7 @@ final class GameView: UIView {
     
     var progress: UIProgressView = {
         let view = UIProgressView()
-        view.tintColor = UIColor.lightYellow
+        view.tintColor = UIColor.lightPurple
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -73,7 +73,7 @@ final class GameView: UIView {
         questionNumberLabel.text = "Вопрос №" + String(Game.shared.level + 1)
         questionLabel.text = question.question
         [buttonA, buttonB, buttonC, buttonD].enumerated().forEach { (index, item) in
-            item.setTitle(question.answers[index], for: .normal)
+            item.setTitle(question.answerOptions[index], for: .normal)
         }
     }
     

@@ -25,7 +25,7 @@ final class Game {
 
     func startGame() {
         questions = gameStrategy.defineQuestions(questions: questions)
-        gameSession = GameSession(questions: questions)
+        gameSession = GameSession(questionsList: questions)
         gameCaretaker.restoreState()
     }
     
@@ -71,5 +71,4 @@ final class Game {
     }
     
 }
-
 

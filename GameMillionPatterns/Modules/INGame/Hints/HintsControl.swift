@@ -128,7 +128,7 @@ class HintsControl: UIView {
             showHallHelp(question: question, controller: gameViewController)
             Game.shared.gameSession?.isHallHelpActive = false
         case callFriendButton:
-            shawFrienfsHint(options: question.answers, controller: gameViewController)
+            shawFrienfsHint(options: question.answerOptions, controller: gameViewController)
             Game.shared.gameSession?.isCallFriendActive = false
         default:
             return
@@ -157,10 +157,10 @@ class HintsControl: UIView {
         let optionC = Int.random(in: 0...(100 - optionA - optionB))
         let optionD = 100 - optionA - optionB - optionC
         let thought: String = """
-            \(question.answers[0])  ........ \(optionA)%
-            \(question.answers[1])  ........ \(optionB)%
-            \(question.answers[2])  ........ \(optionC)%
-            \(question.answers[3])  ........ \(optionD)%
+            \(question.answerOptions[0])  ........ \(optionA)%
+            \(question.answerOptions[1])  ........ \(optionB)%
+            \(question.answerOptions[2])  ........ \(optionC)%
+            \(question.answerOptions[3])  ........ \(optionD)%
         """
         return thought
     }

@@ -7,8 +7,8 @@
 
 import UIKit
 
-class MainView: UIView {
-
+final class MainView: UIView {
+    
     var gameButton : UIButton = MainButton(text: "Start game")
     var addQuestionButton : UIButton = MainButton(text: "Add question")
     var resultsButton : UIButton = MainButton(text: "Results")
@@ -52,5 +52,4 @@ class MainView: UIView {
             buttonsStackView.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: -16)
         ])
     }
-
 }

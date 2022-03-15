@@ -8,5 +8,6 @@
 import UIKit
 
 extension UIColor {
-   static let lightYellow: UIColor = #colorLiteral(red: 0.9685855508, green: 0.8662909865, blue: 0, alpha: 1)
+    static let lightPurple: UIColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+    static let darkGray: UIColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
 }

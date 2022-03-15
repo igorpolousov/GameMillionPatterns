@@ -44,4 +44,3 @@ extension ResultsViewController: UITableViewDataSource, UITableViewDelegate {
         return 56
     }
 }
-

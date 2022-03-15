@@ -5,6 +5,8 @@
 //  Created by Igor Polousov on 15.03.2022.
 //
 
+import Foundation
+
 public struct ObservableOptions: OptionSet, CustomStringConvertible {
 
     public static let initial = ObservableOptions(rawValue: 1 << 0)
@@ -100,6 +102,3 @@ public class Observable<Type> {
         callbacksToNotify.forEach { $0.closure(value, option) }
     }
 }
-
-
-

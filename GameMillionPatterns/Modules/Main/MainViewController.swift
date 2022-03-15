@@ -8,7 +8,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
     private let mainView = MainView()
     
     override func viewDidLoad() {
@@ -43,5 +43,5 @@ class MainViewController: UIViewController {
         let vc = SettingsViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
-
 }
+

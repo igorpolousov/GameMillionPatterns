@@ -4,6 +4,7 @@
 //
 //  Created by Igor Polousov on 15.03.2022.
 //
+import Foundation
 
 class QuestionsBuilder {
     private(set) var question: String = ""
@@ -17,7 +18,7 @@ class QuestionsBuilder {
                 rightAnswer = index
             }
         }
-        return Question(question: question, answers: mixedQuestions, correctAnswer: rightAnswer)
+        return Question(question: question, answerOptions: mixedQuestions, rightAnswer: rightAnswer)
     }
     
     func setQuestion(_ question: String) -> Self {
@@ -35,4 +36,3 @@ class QuestionsBuilder {
         return self
     }
 }
-
