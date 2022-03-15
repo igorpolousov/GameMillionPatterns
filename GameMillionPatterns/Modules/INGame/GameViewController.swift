@@ -39,6 +39,12 @@ class GameViewController: UIViewController {
     // MARK: - Private methods
     
     private func endGame() {
+        let ac = UIAlertController(title: "Игра Окончена", message: "Это был неправлиьный ответ, попробуйте еще раз ", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Ok", style: .default, handler: showStartView))
+        present(ac, animated: true)
+    }
+    
+     private func showStartView(action: UIAlertAction) {
         Game.shared.endGame()
         navigationController?.popViewController(animated: true)
     }
