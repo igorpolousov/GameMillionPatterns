@@ -9,21 +9,39 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    private let mainView = MainView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view = mainView
+        addButtonsAction()
+    }
 
-        // Do any additional setup after loading the view.
+    private func addButtonsAction() {
+        mainView.gameButton.addTarget(self, action: #selector(didTapGame(_:)), for: .touchUpInside)
+        mainView.addQuestionButton.addTarget(self, action: #selector(didTapAddQuestion(_:)), for: .touchUpInside)
+        mainView.resultsButton.addTarget(self, action: #selector(didTapResults(_:)), for: .touchUpInside)
+        mainView.settingsButton.addTarget(self, action: #selector(didTapSettings(_:)), for: .touchUpInside)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc private func didTapGame(_ sender: UIButton) {
+        let vc = GameViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
-    */
+    
+    @objc private func didTapAddQuestion(_ sender: UIButton) {
+        let vc = AddQuestionViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func didTapResults(_ sender: UIButton) {
+        let viewController = ResultsViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @objc private func didTapSettings(_ sender: UIButton) {
+        let vc = SettingsViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
