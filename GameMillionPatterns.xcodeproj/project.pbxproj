@@ -22,6 +22,13 @@
 		C2942A4B27E08E98009615D5 /* AddQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A4A27E08E98009615D5 /* AddQuestionCell.swift */; };
 		C2942A4D27E08EC6009615D5 /* AddQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A4C27E08EC6009615D5 /* AddQuestionView.swift */; };
 		C2942A5127E08F70009615D5 /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A5027E08F70009615D5 /* AddQuestionViewController.swift */; };
+		C2942A5527E08FED009615D5 /* HintsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A5427E08FED009615D5 /* HintsControl.swift */; };
+		C2942A5727E09038009615D5 /* GameStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A5627E09038009615D5 /* GameStrategy.swift */; };
+		C2942A5927E0906B009615D5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A5827E0906B009615D5 /* GameViewController.swift */; };
+		C2942A5B27E0908B009615D5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A5A27E0908B009615D5 /* Game.swift */; };
+		C2942A5D27E090D5009615D5 /* Game + Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A5C27E090D5009615D5 /* Game + Memento.swift */; };
+		C2942A5F27E09103009615D5 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A5E27E09103009615D5 /* GameSession.swift */; };
+		C2942A6227E09131009615D5 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A6127E09131009615D5 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,13 @@
 		C2942A4A27E08E98009615D5 /* AddQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionCell.swift; sourceTree = "<group>"; };
 		C2942A4C27E08EC6009615D5 /* AddQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionView.swift; sourceTree = "<group>"; };
 		C2942A5027E08F70009615D5 /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
+		C2942A5427E08FED009615D5 /* HintsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintsControl.swift; sourceTree = "<group>"; };
+		C2942A5627E09038009615D5 /* GameStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStrategy.swift; sourceTree = "<group>"; };
+		C2942A5827E0906B009615D5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C2942A5A27E0908B009615D5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C2942A5C27E090D5009615D5 /* Game + Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game + Memento.swift"; sourceTree = "<group>"; };
+		C2942A5E27E09103009615D5 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		C2942A6127E09131009615D5 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +167,13 @@
 		C27B5BFF27E076D700E2CF3B /* INGame */ = {
 			isa = PBXGroup;
 			children = (
+				C2942A5327E08FB4009615D5 /* GameStrategy */,
+				C2942A5227E08FAA009615D5 /* Hints */,
+				C2942A5827E0906B009615D5 /* GameViewController.swift */,
+				C2942A5A27E0908B009615D5 /* Game.swift */,
+				C2942A5C27E090D5009615D5 /* Game + Memento.swift */,
+				C2942A5E27E09103009615D5 /* GameSession.swift */,
+				C2942A6127E09131009615D5 /* GameView.swift */,
 			);
 			path = INGame;
 			sourceTree = "<group>";
@@ -204,6 +225,22 @@
 				C2942A5027E08F70009615D5 /* AddQuestionViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2942A5227E08FAA009615D5 /* Hints */ = {
+			isa = PBXGroup;
+			children = (
+				C2942A5427E08FED009615D5 /* HintsControl.swift */,
+			);
+			path = Hints;
+			sourceTree = "<group>";
+		};
+		C2942A5327E08FB4009615D5 /* GameStrategy */ = {
+			isa = PBXGroup;
+			children = (
+				C2942A5627E09038009615D5 /* GameStrategy.swift */,
+			);
+			path = GameStrategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,13 +319,20 @@
 				C2942A5127E08F70009615D5 /* AddQuestionViewController.swift in Sources */,
 				C27B5BE727E075D600E2CF3B /* SceneDelegate.swift in Sources */,
 				C2942A4B27E08E98009615D5 /* AddQuestionCell.swift in Sources */,
+				C2942A5527E08FED009615D5 /* HintsControl.swift in Sources */,
 				C2942A4727E081C6009615D5 /* UIColour.swift in Sources */,
 				C2942A4427E08127009615D5 /* Labels.swift in Sources */,
 				C2942A4227E0811B009615D5 /* Buttons.swift in Sources */,
 				C2942A4027E080A2009615D5 /* MainView.swift in Sources */,
+				C2942A5927E0906B009615D5 /* GameViewController.swift in Sources */,
 				C2942A3C27E07CE1009615D5 /* MainViewController.swift in Sources */,
 				C2942A4D27E08EC6009615D5 /* AddQuestionView.swift in Sources */,
+				C2942A6227E09131009615D5 /* GameView.swift in Sources */,
+				C2942A5727E09038009615D5 /* GameStrategy.swift in Sources */,
+				C2942A5D27E090D5009615D5 /* Game + Memento.swift in Sources */,
 				C2942A4927E08E6B009615D5 /* AddQuestionCellView.swift in Sources */,
+				C2942A5F27E09103009615D5 /* GameSession.swift in Sources */,
+				C2942A5B27E0908B009615D5 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
