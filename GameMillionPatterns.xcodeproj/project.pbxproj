@@ -18,6 +18,10 @@
 		C2942A4227E0811B009615D5 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A4127E0811B009615D5 /* Buttons.swift */; };
 		C2942A4427E08127009615D5 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A4327E08127009615D5 /* Labels.swift */; };
 		C2942A4727E081C6009615D5 /* UIColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A4627E081C6009615D5 /* UIColour.swift */; };
+		C2942A4927E08E6B009615D5 /* AddQuestionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A4827E08E6B009615D5 /* AddQuestionCellView.swift */; };
+		C2942A4B27E08E98009615D5 /* AddQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A4A27E08E98009615D5 /* AddQuestionCell.swift */; };
+		C2942A4D27E08EC6009615D5 /* AddQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A4C27E08EC6009615D5 /* AddQuestionView.swift */; };
+		C2942A5127E08F70009615D5 /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2942A5027E08F70009615D5 /* AddQuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		C2942A4127E0811B009615D5 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		C2942A4327E08127009615D5 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		C2942A4627E081C6009615D5 /* UIColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColour.swift; sourceTree = "<group>"; };
+		C2942A4827E08E6B009615D5 /* AddQuestionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionCellView.swift; sourceTree = "<group>"; };
+		C2942A4A27E08E98009615D5 /* AddQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionCell.swift; sourceTree = "<group>"; };
+		C2942A4C27E08EC6009615D5 /* AddQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionView.swift; sourceTree = "<group>"; };
+		C2942A5027E08F70009615D5 /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +99,11 @@
 		C27B5BF927E0760A00E2CF3B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C27B5BFB27E0768D00E2CF3B /* AddQuestions */,
 				C27B5BFC27E0769F00E2CF3B /* Main */,
 				C27B5BFF27E076D700E2CF3B /* INGame */,
 				C27B5BFE27E076CC00E2CF3B /* Settings */,
 				C27B5BFD27E076C400E2CF3B /* Result */,
-				C27B5BFB27E0768D00E2CF3B /* AddQuestions */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -112,6 +120,8 @@
 		C27B5BFB27E0768D00E2CF3B /* AddQuestions */ = {
 			isa = PBXGroup;
 			children = (
+				C2942A4E27E08F1E009615D5 /* View */,
+				C2942A4F27E08F2D009615D5 /* Controller */,
 			);
 			path = AddQuestions;
 			sourceTree = "<group>";
@@ -176,6 +186,24 @@
 				C2942A4627E081C6009615D5 /* UIColour.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C2942A4E27E08F1E009615D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2942A4827E08E6B009615D5 /* AddQuestionCellView.swift */,
+				C2942A4A27E08E98009615D5 /* AddQuestionCell.swift */,
+				C2942A4C27E08EC6009615D5 /* AddQuestionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2942A4F27E08F2D009615D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2942A5027E08F70009615D5 /* AddQuestionViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,12 +279,16 @@
 			files = (
 				C2942A3A27E078FD009615D5 /* Questions.swift in Sources */,
 				C27B5BE527E075D600E2CF3B /* AppDelegate.swift in Sources */,
+				C2942A5127E08F70009615D5 /* AddQuestionViewController.swift in Sources */,
 				C27B5BE727E075D600E2CF3B /* SceneDelegate.swift in Sources */,
+				C2942A4B27E08E98009615D5 /* AddQuestionCell.swift in Sources */,
 				C2942A4727E081C6009615D5 /* UIColour.swift in Sources */,
 				C2942A4427E08127009615D5 /* Labels.swift in Sources */,
 				C2942A4227E0811B009615D5 /* Buttons.swift in Sources */,
 				C2942A4027E080A2009615D5 /* MainView.swift in Sources */,
 				C2942A3C27E07CE1009615D5 /* MainViewController.swift in Sources */,
+				C2942A4D27E08EC6009615D5 /* AddQuestionView.swift in Sources */,
+				C2942A4927E08E6B009615D5 /* AddQuestionCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
